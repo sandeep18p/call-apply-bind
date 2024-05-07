@@ -9,6 +9,7 @@
 
 // obj.a();
 
+///calll
 
 let obj1 = {
     name: "sandeep",
@@ -28,3 +29,22 @@ let obj2 = {
 }
 
 obj1.x.call(obj2);
+
+let name={
+    firstname:"sandeep",
+    lastname: "pansari"
+}
+
+let printfullname=function(){
+    console.log(this);
+    console.log(this.firstname+" "+this.lastname);
+}
+ 
+printfullname.call(name);
+
+let name2={
+     firstname:"sanp",
+    lastname: "pan"
+}
+
+printfullname.call(name2);
